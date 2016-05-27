@@ -1,5 +1,11 @@
+revproxy:
+  build: ./nginx
+  ports:
+    - "80:80"
+    - "443:443"
+  links:
+    - pdrbapp
+
 pdrbapp:
   build: .
-  volumes: 
-  - ./src:/src
-
+  command: python serverstart.py
