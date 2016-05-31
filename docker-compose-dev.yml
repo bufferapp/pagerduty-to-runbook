@@ -1,0 +1,8 @@
+pdrbapp:
+  command: python serverstart.py --data sqlite --debug
+  volumes:
+    - ./data:/data
+    - ./logs:/logs
+    - ./src:/src
+
+

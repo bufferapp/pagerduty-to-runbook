@@ -1,0 +1,7 @@
+pdrbapp:
+  command: python serverstart.py --data sqlite
+  restart: always
+  volumes:
+    - /home/ubuntu/data:/data
+    - /home/ubuntu/logs:/logs
+
